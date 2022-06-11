@@ -18,7 +18,7 @@ var instance *DriverPg
 func Connect(i int) *DriverPg {
 
 	if instance == nil {
-		// <--- NOT THREAD SAFE / when to use Goroutine
+		// <--- NOT THREAD SAFE / If Goroutines are in use
 		instance = &DriverPg{conn: "DriverConnectPostgres" + ":" + strconv.Itoa(i)}
 	}
 
