@@ -1,6 +1,6 @@
 // How to run
 // go run not_thread_safe/main.go
-// go run -race not_thread_safe/main.gopackage main
+// go run -race not_thread_safe/main.go
 
 package main
 
